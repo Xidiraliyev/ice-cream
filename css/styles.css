@@ -561,8 +561,21 @@ select:focus {
     padding: 2.9rem 2.5rem;
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+
 .question-form {
     position: relative;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+
+    
 }
 .questions {
     width: 30.3rem;
@@ -572,6 +585,14 @@ select:focus {
     padding: 2.9rem 2.5rem;
     margin-left: 3rem;
     margin-bottom: 3.7rem;
+    appearance: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #0F0000;
+    opacity: 0.8;
+    
 }
 
 .question-input {
@@ -580,6 +601,13 @@ select:focus {
     border: 1px solid #FFA3A3;
     border-radius: 5px;
     padding: 2.9rem 2.5rem;
+}
+
+.icon-container {
+    position: absolute;
+    bottom: 150px;
+    right: 25px;
+    cursor: pointer;
 }
 
 .send-button {
@@ -679,8 +707,12 @@ select:focus {
     border-radius: 5px;
     background: #0A0808;
     margin-bottom: 1.8rem;
+    color: #FAFAFA;
 }
 
+.footer-email-input:focus {
+    border: 2px solid #D64374;
+}
 .footer-email-input::placeholder{
     font-weight: 400;
     font-size: 1.4rem;
